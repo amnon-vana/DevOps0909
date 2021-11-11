@@ -1,0 +1,8 @@
+node {
+    stage("clone") {
+        git "https://github.com/amnon-vana/DevOps0909.git"
+    }
+    stage("show files") {
+        bat "dir"
+    }
+}
